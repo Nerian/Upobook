@@ -9,7 +9,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100626142443) do
+ActiveRecord::Schema.define(:version => 20100626182555) do
+
+  create_table "friends", :id => false, :force => true do |t|
+    t.integer "this_user_id",       :null => false
+    t.integer "this_other_user_id", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"
