@@ -1,8 +1,9 @@
 class User < ActiveRecord::Base
 
   has_and_belongs_to_many :friends, :class_name => "User",
-    :foreign_key => "this_user_id",
-    :association_foreign_key => "other_user_id"
+    :join_table => "friends",
+    :foreign_key => "user_id",
+    :association_foreign_key => "friend_user_id"
 
   validates :name, :password, :mail, :presence => true;
   validates :mail, :uniqueness => true;

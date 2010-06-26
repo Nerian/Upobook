@@ -12,8 +12,8 @@
 ActiveRecord::Schema.define(:version => 20100626182555) do
 
   create_table "friends", :id => false, :force => true do |t|
-    t.integer "this_user_id",       :null => false
-    t.integer "this_other_user_id", :null => false
+    t.integer "user_id",        :null => false
+    t.integer "friend_user_id", :null => false
   end
 
   create_table "users", :force => true do |t|
