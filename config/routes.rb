@@ -1,6 +1,4 @@
 Upobook::Application.routes.draw do |map|
-  resources :friends
-
   resources :users
 
   # The priority is based upon order of creation:
