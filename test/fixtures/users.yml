@@ -1,11 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
+gonzalo:
   name: MyString
   password: MyString
-  mail: MyString
+  mail: gonzalo@gmail.com
 
-two:
-  name: MyString
+godofredo:
+  name: MyString2
   password: MyString
-  mail: MyString
+  mail: godofredo@gmail.com
