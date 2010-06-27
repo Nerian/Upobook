@@ -1,7 +1,11 @@
 Upobook::Application.routes.draw do |map|
+  get "chat/index"
+
   resources :channels
 
   resources :users
+
+  root :to => "chat#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
