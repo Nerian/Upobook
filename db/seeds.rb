@@ -14,3 +14,8 @@ User.create(:name => "Altair", :password => "12345", :mail=>"Altair@upo.com")
 User.create(:name => "Nicolas", :password => "12345", :mail=>"Nicolas@upo.com")
 User.create(:name => "Pepito", :password => "12345", :mail=>"Pepito@upo.com")
 User.create(:name => "Sauron", :password => "12345", :mail=>"Sauron@upo.com")
+
+Channel.delete_all
+
+Channel.create(:name => "Soporte", :description => "Información para el usuario", :owner => 1)
+Channel.create(:name => "Historia", :description => "Chat sobre la historia de europa", :owner => 2)
