@@ -10,7 +10,7 @@ development:
 
 test:
  adapter: mysql
- database: upobook_dev
+ database: upobook_test
  username: root
  password: 12345
  timeout: 5000
