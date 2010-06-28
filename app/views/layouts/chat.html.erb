@@ -1,0 +1,12 @@
+<% content_for :content do  %>
+  <div id="channels_box">
+    <%= yield(:channels_box_content) %>
+  </div>
+  <div id="room_content_box">
+    <%= yield(:room_content) %>
+  </div>
+  <div id="list_online_people_box">
+    <%= yield(:list_online_people_content) %>
+  </div>
+<% end %>
+<%= render :file  => 'layouts/application' %>

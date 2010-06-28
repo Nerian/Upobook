@@ -12,6 +12,62 @@
 */
 
 root { 
-    display: block;
+    display: block;    
 }
 
+body{
+    text-align: center;
+}
+
+#wrapper{
+    margin:0 auto 0 auto;
+    width: 80%;
+    height: 400px;
+}
+
+#header{
+    outline-color: blue;
+    outline-style: solid;
+    outline-width: 1px;
+}
+#contents{
+    outline-color: blue;
+    outline-style: solid;
+    outline-width: 1px;
+    height:100%;
+}
+
+#footer{
+    clear: both;
+    outline-color: blue;
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+#channels_box{
+    outline-color: blue;
+    outline-style: solid;
+    outline-width: 1px;
+    float: left;
+    height: 100%;
+    width: 20%;
+
+}
+
+#room_content_box{
+    outline-color: blue;
+    outline-style: solid;
+    outline-width: 1px;
+    float: left;
+    height: 100%;
+    width: 60%;
+}
+
+#list_online_people_box{
+    outline-color: blue;
+    outline-style: solid;
+    outline-width: 1px;
+    float: right;
+    height: 100%;
+    width: 20%;
+}
