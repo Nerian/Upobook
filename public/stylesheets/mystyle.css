@@ -1,18 +1,12 @@
-/* 
-    Document   : mystyle
-    Created on : 27-jun-2010, 16:26:07
-    Author     : Nerian
-    Description:
-        Purpose of the stylesheet follows.
-*/
-
-/* 
-   TODO customize this sample style
-   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
-*/
 
 root { 
-    display: block;    
+    display: block;
+    height: 100%;
+}
+
+html,body{
+    margin:0px;
+    height:100%;
 }
 
 body{
@@ -22,7 +16,8 @@ body{
 #wrapper{
     margin:0 auto 0 auto;
     width: 80%;
-    height: 400px;
+    height: 90%;
+    padding: 20px;
 }
 
 #header{
@@ -65,7 +60,7 @@ body{
 
 #display_canales{
     height: 90%;
-    
+
 }
 
 #controles{

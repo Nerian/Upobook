@@ -12,7 +12,7 @@
         Header
       </div>
       <div id="contents">
-        <%= yield(:content) or yield %>
+        <%= content_for?(:content) ? yield(:content) : yield %>        
       </div>
       <div id="footer">
         Gonzalo Rodríguez-Baltanás Díaz  2009-2010  Advanced web programming course
