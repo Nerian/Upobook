@@ -63,6 +63,15 @@ body{
     width: 60%;
 }
 
+#display_canales{
+    height: 90%;
+    
+}
+
+#controles{
+    height: 10%;
+}
+
 #list_online_people_box{
     outline-color: blue;
     outline-style: solid;

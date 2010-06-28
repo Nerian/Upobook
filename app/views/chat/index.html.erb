@@ -1,7 +1,15 @@
 
 <% content_for :channels_box_content do %>
-  <p>Lista de canales</p>
-  <%= render "channels" %>
+
+  <div id="display_canales">
+    <p>Lista de canales</p>
+    <%= render "channels" %>
+  </div>
+
+  <div id="controles">
+    <%= link_to 'Nuevo', new_channel_path %>
+  </div>
+
 <% end %>
 
 <% content_for :room_content do %>
