@@ -7,16 +7,17 @@
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
 User.delete_all
-
-User.create(:name => "Gonzalo", :password => "12345", :mail=>"gonzalo@upo.com")
-User.create(:name => "Godofredo", :password => "12345", :mail=>"Godofredo@upo.com")
-User.create(:name => "Altair", :password => "12345", :mail=>"Altair@upo.com")
-User.create(:name => "Nicolas", :password => "12345", :mail=>"Nicolas@upo.com")
-User.create(:name => "Pepito", :password => "12345", :mail=>"Pepito@upo.com")
-User.create(:name => "Sauron", :password => "12345", :mail=>"Sauron@upo.com")
-
 Channel.delete_all
 
-Channel.create(:name => "Soporte", :description => "Información para el usuario", :owner=> 1)
-Channel.create(:name => "Historia", :description => "Chat sobre la historia de europa", :owner => 2)
+user1 = User.create(:name => "Gonzalo", :password => "12345", :mail=>"gonzalo@upo.com")
+user2 = User.create(:name => "Godofredo", :password => "12345", :mail=>"Godofredo@upo.com")
+user3 = User.create(:name => "Altair", :password => "12345", :mail=>"Altair@upo.com")
+user4 = User.create(:name => "Nicolas", :password => "12345", :mail=>"Nicolas@upo.com")
+user5 = User.create(:name => "Pepito", :password => "12345", :mail=>"Pepito@upo.com")
+user6 = User.create(:name => "Sauron", :password => "12345", :mail=>"Sauron@upo.com")
+
+
+
+Channel.create(:name => "Soporte", :description => "Información para el usuario", :owner=> user6)
+Channel.create(:name => "Historia", :description => "Chat sobre la historia de europa", :owner => user4)
 
