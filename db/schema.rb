@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100627170649) do
+ActiveRecord::Schema.define(:version => 20100628193315) do
 
   create_table "channel_users", :force => true do |t|
     t.integer  "channel_id"
@@ -22,6 +22,14 @@ ActiveRecord::Schema.define(:version => 20100627170649) do
     t.string   "name"
     t.text     "description"
     t.integer  "owner"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "comments", :force => true do |t|
+    t.text     "message"
+    t.integer  "user_id"
+    t.integer  "channel_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

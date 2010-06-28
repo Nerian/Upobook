@@ -16,8 +16,6 @@ user4 = User.create(:name => "Nicolas", :password => "12345", :mail=>"Nicolas@up
 user5 = User.create(:name => "Pepito", :password => "12345", :mail=>"Pepito@upo.com")
 user6 = User.create(:name => "Sauron", :password => "12345", :mail=>"Sauron@upo.com")
 
-
-
-Channel.create(:name => "Soporte", :description => "Información para el usuario", :owner=> user6)
-Channel.create(:name => "Historia", :description => "Chat sobre la historia de europa", :owner => user4)
+Channel.create(:name => "Soporte", :description => "Información para el usuario", :owner=> user6.id)
+Channel.create(:name => "Historia", :description => "Chat sobre la historia de europa", :owner => user4.id)
 
