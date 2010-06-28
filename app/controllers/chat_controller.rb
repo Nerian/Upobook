@@ -1,8 +1,7 @@
 class ChatController < ApplicationController  
 
   def index
-    @channels = Channel.all
-
+    @channels = Channel.all    
   end
 
 end

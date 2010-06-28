@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_many :channel_users
+  has_many :channels, :foreign_key => 'owner'
  
   validates :name, :password, :mail, :presence => true;
   validates :mail, :uniqueness => true;

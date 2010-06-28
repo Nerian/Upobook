@@ -17,5 +17,6 @@ User.create(:name => "Sauron", :password => "12345", :mail=>"Sauron@upo.com")
 
 Channel.delete_all
 
-Channel.create(:name => "Soporte", :description => "Información para el usuario", :owner => 1)
+Channel.create(:name => "Soporte", :description => "Información para el usuario", :owner=> 1)
 Channel.create(:name => "Historia", :description => "Chat sobre la historia de europa", :owner => 2)
+
