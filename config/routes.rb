@@ -1,4 +1,6 @@
 Upobook::Application.routes.draw do |map|
+  resources :comments
+
   get "chat/index"
 
   resources :channels
