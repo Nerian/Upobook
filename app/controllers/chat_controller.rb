@@ -1,7 +1,10 @@
 class ChatController < ApplicationController  
 
   def index
-    @channels = Channel.all    
+    @channels = Channel.all
+    if id = session[:channel]
+      @channel = Channel.find(id)
+    end
   end
 
 end

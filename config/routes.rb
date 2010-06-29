@@ -6,6 +6,11 @@ controller :sessions do
   delete 'logout' => :destroy
 end
 
+  controller :channel_users do
+    post 'entrarCanal' => :create
+    delete 'salirCanal' => :destroy
+  end
+
   resources :comments
 
   get "chat/index"

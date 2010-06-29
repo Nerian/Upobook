@@ -1,6 +1,6 @@
 
 <% @channels.each do |channel| %>
   <ul>
-    <li><%= channel.name %></li>
+    <li><%= link_to channel.name, entrarCanal_path(:channel=>channel.id), :method=>:post %></li>
   </ul>
 <% end %>

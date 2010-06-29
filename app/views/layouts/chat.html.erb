@@ -2,8 +2,10 @@
   <div id="logout_box">
     <%= User.find(session['user_id']).name %>
     <%= link_to "Logout", logout_path, :method => :delete %>
-  </div>
-
+    <% if notice %>
+    <p class="notice"><%= notice %></p>
+  <% end %>
+  </div> 
   <div id="channels_box">
     <%= yield(:channels_box_content) %>
   </div>
