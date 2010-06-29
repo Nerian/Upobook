@@ -1,4 +1,10 @@
 Upobook::Application.routes.draw do |map|
+  get "sessions/new"
+
+  get "sessions/create"
+
+  get "sessions/destroy"
+
   resources :comments
 
   get "chat/index"
