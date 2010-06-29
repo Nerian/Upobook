@@ -8,4 +8,11 @@ class User < ActiveRecord::Base
     :message => "You must insert an email in the form 'example@example.com'"
   }
 
+  class <<self
+    def authenticate(mail, password)
+      if user = find_by_mail(mail)
+        user if user.password == password
+      end
+    end
+  end
 end

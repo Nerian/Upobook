@@ -1,2 +1,15 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
+
+<%= form_tag do %>
+  <fieldset>
+    <legend>Login</legend>
+
+    <label for="mail">Mail:</label>
+    <%= text_field_tag :mail, params[:mail] %>
+
+    <label for="password">Password:</label>
+    <%= password_field_tag :password, params[:password] %>
+
+    <%= submit_tag "Login"%>
+
+  </fieldset>
+<% end %>
