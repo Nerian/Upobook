@@ -1,6 +1,10 @@
 <div id="room_info">
   <% if @channel %>
     Canal <%= @channel.name %>: <%= @channel.description %>
+    <hr/>
+
+    <%= render @channel.comments %>
+
 
 
   <% else %>
