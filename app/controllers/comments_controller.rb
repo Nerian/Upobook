@@ -44,10 +44,10 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to(@comment, :notice => 'Comment was successfully created.') }
+        format.html { redirect_to chat_index_url}
         format.xml  { render :xml => @comment, :status => :created, :location => @comment }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => chat_index_url}
         format.xml  { render :xml => @comment.errors, :status => :unprocessable_entity }
       end
     end
