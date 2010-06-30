@@ -21,7 +21,7 @@ class CommentsControllerTest < ActionController::TestCase
       post :create, :comment => @comment.attributes
     end
 
-    assert_redirected_to comment_path(assigns(:comment))
+    assert_redirected_to chat_index_path
   end
 
   test "should show comment" do

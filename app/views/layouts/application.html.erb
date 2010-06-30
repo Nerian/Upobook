@@ -7,16 +7,21 @@
     <%= csrf_meta_tag %>
   </head>
   <body>    
-      <div id="wrapper">
-        <div id="header">
-          Header
-        </div>
-        <div id="contents">
-          <%= content_for?(:content) ? yield(:content) : yield %>
-        </div>
-        <div id="footer">
-          Gonzalo Rodríguez-Baltanás Díaz  2009-2010  Advanced web programming course
-        </div>
+    <div id="wrapper">
+      <div id="header">
+        Header
       </div>
+      <div id="noticias">
+        <% if notice %>
+          <p class="notice"><%= notice %></p>
+        <% end %>
+      </div>
+      <div id="contents">
+        <%= content_for?(:content) ? yield(:content) : yield %>
+      </div>
+      <div id="footer">
+        Gonzalo Rodríguez-Baltanás Díaz  2009-2010  Advanced web programming course
+      </div>
+    </div>
   </body>
 </html>
