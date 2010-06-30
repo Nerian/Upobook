@@ -78,3 +78,13 @@ body{
 #login_box{   
     
 }
+
+#room_info{
+    height: 100%;
+}
+
+#comments_list{
+    overflow-y:scroll;
+    height: 80%;
+
+}
