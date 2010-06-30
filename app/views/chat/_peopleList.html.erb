@@ -2,8 +2,8 @@
 <% if @channel %>
   Miembros:
   <ul>
-    <% @channel.channel_user_ids.each do |channel_user| %>
-      <li><%= ChannelUser.find(channel_user).user.name %></li>
+    <% @channel.users.each do |user| %>
+      <li><%= user.name %></li>
     <% end %>
   </ul>
 
