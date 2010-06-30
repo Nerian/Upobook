@@ -1,0 +1,14 @@
+
+<% if @channel %>
+  Miembros:
+  <ul>
+    <% @channel.channel_user_ids.each do |channel_user| %>
+      <li><%= ChannelUser.find(channel_user).user.name %></li>
+    <% end %>
+  </ul>
+
+<% else %>
+
+
+<% end %>
+
