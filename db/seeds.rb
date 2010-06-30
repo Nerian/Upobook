@@ -14,6 +14,7 @@ user3 = User.create(:name => "Altair", :password => "12345", :mail=>"Altair@upo.
 user4 = User.create(:name => "Nicolas", :password => "12345", :mail=>"Nicolas@upo.com")
 user5 = User.create(:name => "Pepito", :password => "12345", :mail=>"Pepito@upo.com")
 user6 = User.create(:name => "Sauron", :password => "12345", :mail=>"Sauron@upo.com")
+user7 = User.create(:name => "Prueba", :password => "prueba", :mail=>"prueba@upo.com")
 
 Channel.delete_all
 

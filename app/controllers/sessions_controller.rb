@@ -15,7 +15,9 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    User.find(session[:user_id]).channel_users.destroy_all
     session[:user_id] = nil
+    session[:channel] = nil
     redirect_to chat_index_url, :notice => "Logged out"
   end
 

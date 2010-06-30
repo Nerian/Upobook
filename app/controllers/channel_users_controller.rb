@@ -12,6 +12,7 @@ class ChannelUsersController < ApplicationController
 
   def destroy
     User.find(session[:user_id]).channel_users.destroy_all
-    redirect_to chat_index_path, :alert=>"Saliste del canal"
+    session[:channel] = nil
+    redirect_to chat_index_path
   end
 end
