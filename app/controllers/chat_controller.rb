@@ -8,5 +8,4 @@ class ChatController < ApplicationController
       @comment = Comment.new
     end
   end
-
 end

@@ -6,6 +6,7 @@ class UsersControllerTest < ActionController::TestCase
     @update = {
       :name => "Luis",
       :password => "12245",
+      :password_confirmation => "12245",
       :mail => "kiwi@lolo.com"
     }
   end

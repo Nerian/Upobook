@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   has_many :comments, :dependent => :destroy
 
  
-  validates :name, :password, :mail, :presence => true;
+  validates :name, :password, :mail, :password_confirmation, :presence => true
   validates :mail, :uniqueness => true;
   validates :mail, :format => {:with => /^\w*@\w*.\w*$/i,
     :message => "Dirección de mail inválida"

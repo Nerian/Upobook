@@ -5,7 +5,6 @@ class Channel < ActiveRecord::Base
   belongs_to :user, :foreign_key => "owner"
   has_many :comments, :dependent => :destroy
 
-  validates :name, :description, :owner, :presence => true;
-  validates
+  validates :name, :description, :owner, :presence => true;  
   
 end
