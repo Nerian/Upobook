@@ -1,15 +1,4 @@
-<%= form_for(@comment) do |f| %>
-  <% if @comment.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
-
-      <ul>
-        <% @comment.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= form_for(@comment, :remote => true) do |f| %>
 
   <%= f.text_area :message, :size => '45x3' %>
 
@@ -17,6 +6,6 @@
   <%= f.hidden_field :channel_id, :value => session[:channel] %>
 
   <div class="actions">
-    <%= f.submit :remote => true %>
+    <%= button_to 'Comentar', 'comments/create' %>
   </div>
 <% end %>

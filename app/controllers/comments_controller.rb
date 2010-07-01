@@ -41,10 +41,12 @@ class CommentsController < ApplicationController
   # POST /comments.xml
   def create
     @comment = Comment.new(params[:comment])
+    @comments = @comment.channel.comments_since_user_conected(@comment.user.id)
 
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to chat_index_url}        
+        format.html { redirect_to chat_index_url}
+        format.js
         format.xml  { render :xml => @comment, :status => :created, :location => @comment }
       else
         format.html { render :action => chat_index_url}
