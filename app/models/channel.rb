@@ -5,6 +5,10 @@ class Channel < ActiveRecord::Base
   belongs_to :user, :foreign_key => "owner"
   has_many :comments, :dependent => :destroy
 
-  validates :name, :description, :owner, :presence => true;  
+  validates :name, :description, :owner, :presence => true;
+
   
+  def comments_since_user_conected(user_id)
+    self.comments.where(:created_at => (User.find(user_id).channel_users.first.created_at)..(Time.now))
+  end
 end
