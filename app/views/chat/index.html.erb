@@ -6,7 +6,6 @@
       <%= render @channels %>
     </ul>
   </div>
-
   <div id="controles">
     <%= link_to 'Nuevo', new_channel_path %>
   </div>
@@ -14,9 +13,14 @@
 <% end %>
 
 <% content_for :room_content do %>
-  <%= render 'chatroom'%>
+  <%= render 'chatroom' %>
 <% end %>
 
 <% content_for :list_online_people_content do %>
-  <%= render 'peopleList' %>
+  <% if @channel %>
+    Miembros:
+    <ul>
+      <%= render @channel.users %>
+    </ul>
+  <% end %>
 <%  end %>
