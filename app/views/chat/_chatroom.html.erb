@@ -2,14 +2,11 @@
 <div id="room_info">
 
   <% if @channel %>
+    Canal <%= @channel.name %>: <%= @channel.description %>
+    <hr/>
     <div id="comments_list">
-      Canal <%= @channel.name %>: <%= @channel.description %>
-      <hr/>
 
       <%= render @comments %>
-
-
-
 
     </div>
     <div id="comment_box">
