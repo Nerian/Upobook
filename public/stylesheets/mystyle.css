@@ -16,7 +16,8 @@ body{
 #wrapper{
     margin:0 auto 0 auto;
     width: 80%;
-    height: 90%;    
+    height: 90%;
+    text-align: left;
 }
 
 #header{
