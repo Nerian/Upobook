@@ -6,5 +6,6 @@ class Channel < ActiveRecord::Base
   has_many :comments, :dependent => :destroy
 
   validates :name, :description, :owner, :presence => true;
+  validates
   
 end

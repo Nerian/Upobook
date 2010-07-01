@@ -11,6 +11,8 @@ class User < ActiveRecord::Base
     :message => "Dirección de mail inválida"
   }
 
+  validates_confirmation_of :password
+
   class <<self
     def authenticate(mail, password)
       if user = find_by_mail(mail)
