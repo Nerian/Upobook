@@ -17,6 +17,6 @@
   <%= f.hidden_field :channel_id, :value => session[:channel] %>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :remote => true %>
   </div>
 <% end %>

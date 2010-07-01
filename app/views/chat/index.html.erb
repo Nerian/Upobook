@@ -2,11 +2,13 @@
 <% content_for :channels_box_content do %>  
   <div id="display_canales">
     <p>Lista de canales</p>
-    <%= render "channels" %>
+    <ul>
+      <%= render @channels %>
+    </ul>
   </div>
 
   <div id="controles">
-    <%= link_to 'Nuevo', new_channel_path %>    
+    <%= link_to 'Nuevo', new_channel_path %>
   </div>
 
 <% end %>

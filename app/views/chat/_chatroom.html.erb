@@ -1,13 +1,10 @@
 
 <div id="room_info">
-
   <% if @channel %>
     Canal <%= @channel.name %>: <%= @channel.description %>
     <hr/>
     <div id="comments_list">
-
       <%= render @comments %>
-
     </div>
     <div id="comment_box">
       <%= render 'comments/form' %>
