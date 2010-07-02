@@ -1,6 +1,16 @@
-
 <div id="room_info">
   <% if @channel %>
+
+
+    <%= javascript_tag do %>
+      new Ajax.PeriodicalUpdater('comments_list', 'update',
+      {
+      method: 'get',
+      frequency: 2,
+      decay: 1
+      });
+    <% end %>
+
     Canal <%= @channel.name %>: <%= @channel.description %>
     <hr/>
     <div id="comments_list">

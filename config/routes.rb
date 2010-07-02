@@ -1,19 +1,20 @@
 Upobook::Application.routes.draw do |map|
 
-controller :sessions do
-  get 'login' => :new
-  post 'login' => :create
-  delete 'logout' => :destroy
-end
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
 
   controller :channel_users do
     post 'entrarCanal' => :create
     delete 'salirCanal' => :destroy
-  end
+  end      
 
   resources :comments
 
   get "chat/index"
+  get "chat/update"
 
   resources :channels
 
