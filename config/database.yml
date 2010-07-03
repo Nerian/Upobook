@@ -1,39 +1,39 @@
 
 #  USAMOS MYSQL, PERO SI DESCOMENTAS ABAJO, USARAS SQLITE3
-development:
- adapter: mysql
- database: upobook_dev
- username: root
- password: 12345
- timeout: 5000
- socket: /Applications/MAMP/tmp/mysql/mysql.sock
+#development:
+# adapter: mysql
+# database: upobook_dev
+# username: root
+# password: 12345
+# timeout: 5000
+# socket: /Applications/MAMP/tmp/mysql/mysql.sock
 
-test:
- adapter: mysql
- database: upobook_test
- username: root
- password: 12345
- timeout: 5000
- socket: /Applications/MAMP/tmp/mysql/mysql.sock
+#test:
+# adapter: mysql
+# database: upobook_test
+# username: root
+# password: 12345
+# timeout: 5000
+# socket: /Applications/MAMP/tmp/mysql/mysql.sock
 
 # DESCOMENTAR LAS LINEAS SIGUIENTES PARA USAR SQLITE3
 
 #   gem install sqlite3-ruby (not necessary on OS X Leopard)
-#development:
-#  adapter: sqlite3
-#  database: db/development.sqlite3
-#  pool: 5
-#  timeout: 5000
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
 
 
-#test:
-#  adapter: sqlite3
-#  database: db/test.sqlite3
-#  pool: 5
-#  timeout: 5000
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
 
-#production:
-#  adapter: sqlite3
-#  database: db/production.sqlite3
-#  pool: 5
-#  timeout: 5000
+production:
+  adapter: sqlite3
+  database: db/production.sqlite3
+  pool: 5
+  timeout: 5000
