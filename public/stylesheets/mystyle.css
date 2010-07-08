@@ -16,8 +16,7 @@ body{
 #wrapper{
     margin:0 auto 0 auto;
     width: 80%;
-    height: 90%;
-    text-align: left;
+    height: 90%;    
 }
 
 #header{
@@ -30,6 +29,7 @@ body{
     outline-style: solid;
     outline-width: 1px;
     height:100%;
+    text-align: center;
 }
 
 #footer{
@@ -46,7 +46,6 @@ body{
     float: left;
     height: 100%;
     width: 20%;
-
 }
 
 #room_content_box{
@@ -87,5 +86,10 @@ body{
 #comments_list{
     overflow-y:scroll;
     height: 80%;
+}
 
+#usuariosPrueba{
+    width: 50%;
+    border: 3px;
+    border-style: groove;
 }

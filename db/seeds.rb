@@ -8,13 +8,14 @@
 
 User.delete_all
 
-user1 = User.create(:name => "Gonzalo", :password => "12345", :mail=>"gonzalo@upo.com")
-user2 = User.create(:name => "Godofredo", :password => "12345", :mail=>"Godofredo@upo.com")
-user3 = User.create(:name => "Altair", :password => "12345", :mail=>"Altair@upo.com")
-user4 = User.create(:name => "Nicolas", :password => "12345", :mail=>"Nicolas@upo.com")
-user5 = User.create(:name => "Pepito", :password => "12345", :mail=>"Pepito@upo.com")
-user6 = User.create(:name => "Sauron", :password => "12345", :mail=>"Sauron@upo.com")
-user7 = User.create(:name => "Prueba", :password => "prueba", :mail=>"prueba@upo.com")
+user1 = User.create(:name => "Gonzalo", :password => "12345", :password_confirmation=> "12345",:mail=>"gonzalo@upo.com")
+user2 = User.create(:name => "Godofredo", :password => "12345",:password_confirmation=> "12345", :mail=>"Godofredo@upo.com")
+user3 = User.create(:name => "Altair", :password => "12345",:password_confirmation=> "12345", :mail=>"Altair@upo.com")
+user4 = User.create(:name => "Nicolas", :password => "12345",:password_confirmation=> "12345", :mail=>"Nicolas@upo.com")
+user5 = User.create(:name => "Pepito", :password => "12345",:password_confirmation=> "12345", :mail=>"Pepito@upo.com")
+user6 = User.create(:name => "Sauron", :password => "12345",:password_confirmation=> "12345", :mail=>"Sauron@upo.com")
+user7 = User.create(:name => "Prueba", :password => "prueba",:password_confirmation=> "prueba", :mail=>"prueba@upo.com")
+user8 = User.create(:name => "Prueba2", :password => "prueba2",:password_confirmation=> "prueba2", :mail=>"prueba2@upo.com")
 
 Channel.delete_all
 
