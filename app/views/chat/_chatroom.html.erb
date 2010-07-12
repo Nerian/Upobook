@@ -1,39 +1,41 @@
-<div id="room_info">
-  <% if @channel %>
+
+<% if @channel %>
 
 
-    <%= javascript_tag do %>
-      new Ajax.PeriodicalUpdater('comments_list', 'update',
-      {
-      method: 'get',
-      frequency: 2,
-      decay: 1
-      });
-    <% end %>
-
-    <%= javascript_tag do %>
-      new Ajax.PeriodicalUpdater('peopleOnList', 'updatepeopleon',
-      {
-      method: 'get',
-      frequency: 2,
-      decay: 1
-      });
-    <% end %>
-
-    Canal <%= @channel.name %>: <%= @channel.description %>
-    <hr/>
-    <div id="comments_list">
-      <%= render @comments %>
-    </div>
-    <div id="comment_box">
-      <%= render 'comments/form' %>
-    </div>
-
-
-  <% else %>
-    Elija un canal
+  <%= javascript_tag do %>
+    new Ajax.PeriodicalUpdater('comments_list', 'update',
+    {
+    method: 'get',
+    frequency: 2,
+    decay: 1
+    });
   <% end %>
-</div>
+
+  <%= javascript_tag do %>
+    new Ajax.PeriodicalUpdater('peopleOnList', 'updatepeopleon',
+    {
+    method: 'get',
+    frequency: 2,
+    decay: 1
+    });
+  <% end %>
+
+  <div id="room_info">
+    Canal <%= @channel.name %>: <%= @channel.description %>
+  </div>
+  <hr/>
+  <div id="comments_list">
+    <%= render @comments %>
+  </div>
+  <hr/>
+  <div id="comment_box">
+    <%= render 'comments/form' %>
+  </div>
+
+
+<% else %>
+  Elija un canal
+<% end %>
 
 <% content_for :list_online_people_content do %>
 

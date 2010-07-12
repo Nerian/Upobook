@@ -4,9 +4,8 @@
 
   <%= f.hidden_field :user_id, :value => session[:user_id]  %>
   <%= f.hidden_field :channel_id, :value => session[:channel] %>
-  <%= f.submit  %>
 
   <div class="actions">
-    <%= button_to 'Comentar', 'comments/create' %>
+      <%= f.submit  %>
   </div>
 <% end %>

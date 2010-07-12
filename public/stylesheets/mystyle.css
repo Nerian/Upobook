@@ -1,12 +1,10 @@
 
 root { 
-    display: block;
-    height: 100%;
+    display: block;    
 }
 
 html,body{
-    margin:0px;
-    height:100%;
+    margin:0px;    
 }
 
 body{
@@ -16,19 +14,18 @@ body{
 
 #wrapper{
     margin:0 auto 0 auto;
-    width: 80%;
-    height: 90%;    
+    width: 80%;    
 }
 
-#header{
-}
-
-#contents{
+#header{   
     outline-color: blue;
     outline-style: solid;
     outline-width: 1px;
-    height:100%;
+}
+
+#contents{
     text-align: center;
+    margin: 15px;
 }
 
 #footer{
@@ -39,36 +36,24 @@ body{
 }
 
 #channels_box{
-    outline-color: blue;
-    outline-style: solid;
-    outline-width: 1px;
-    float: left;
-    height: 100%;
+    float: left;    
     width: 20%;
 }
 
 #room_content_box{
-    outline-color: blue;
-    outline-style: solid;
-    outline-width: 1px;
-    float: left;
-    height: 100%;
+    float: left;    
     width: 60%;
 }
 
 #display_canales{
-    height: 90%;
+    height: 250px;
 
 }
 
-#controles{
-    height: 10%;
+#controles{    
 }
 
 #list_online_people_box{
-    outline-color: blue;
-    outline-style: solid;
-    outline-width: 1px;
     float: right;
     height: 100%;
     width: 20%;
@@ -84,7 +69,7 @@ body{
 
 #comments_list{
     overflow-y:scroll;
-    height: 80%;
+    height: 250px;
 }
 
 #usuariosPrueba{
