@@ -10,9 +10,16 @@ class ChatController < ApplicationController
   end
 
   def update    
-      @channel = Channel.find(session[:channel])
-      @comments = @channel.comments_since_user_conected(session[:user_id])
-      render(@comments)
+    @channel = Channel.find(session[:channel])
+    @comments = @channel.comments_since_user_conected(session[:user_id])
+    render(@comments)
+  end
+
+  def updatepeopleon
+    @channel = Channel.find(session[:channel])
+    @comments = @channel.comments_since_user_conected(session[:user_id])
+    render(@channel.users)
+
   end
   
 end

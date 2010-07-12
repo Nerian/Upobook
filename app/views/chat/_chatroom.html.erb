@@ -11,6 +11,15 @@
       });
     <% end %>
 
+    <%= javascript_tag do %>
+      new Ajax.PeriodicalUpdater('peopleOnList', 'updatepeopleon',
+      {
+      method: 'get',
+      frequency: 2,
+      decay: 1
+      });
+    <% end %>
+
     Canal <%= @channel.name %>: <%= @channel.description %>
     <hr/>
     <div id="comments_list">
@@ -19,7 +28,23 @@
     <div id="comment_box">
       <%= render 'comments/form' %>
     </div>
+
+
   <% else %>
     Elija un canal
   <% end %>
 </div>
+
+<% content_for :list_online_people_content do %>
+
+  <div id="peopleOn">
+    <% if @channel %>
+      Miembros:
+      <ul>
+        <div id="peopleOnList">
+          <%= render @channel.users %>
+        </div>
+      </ul>
+    <% end %>
+  </div>
+<%  end %>

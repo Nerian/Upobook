@@ -11,6 +11,7 @@ html,body{
 
 body{
     text-align: center;
+    background: url(../images/bg.png) repeat center 0;
 }
 
 #wrapper{
@@ -20,10 +21,8 @@ body{
 }
 
 #header{
-    outline-color: blue;
-    outline-style: solid;
-    outline-width: 1px;
 }
+
 #contents{
     outline-color: blue;
     outline-style: solid;

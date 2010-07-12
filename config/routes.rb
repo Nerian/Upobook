@@ -15,6 +15,7 @@ Upobook::Application.routes.draw do |map|
 
   get "chat/index"
   get "chat/update"
+  get "chat/updatepeopleon"
 
   resources :channels
 

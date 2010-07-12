@@ -15,15 +15,3 @@
   <%= render 'chatroom' %>
 <% end %>
 
-<% content_for :list_online_people_content do %>
-
-  <div id="peopleOn">
-    <% if @channel %>
-      Miembros:
-      <ul>
-        <%= render @channel.users %>
-      </ul>
-    <% end %>
-  </div>
-
-<%  end %>
